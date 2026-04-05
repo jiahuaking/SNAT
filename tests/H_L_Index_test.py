@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from src import Calculate_H_L_Index, get_Recursive_hl_index
+from src.snat.Node_Evaluation import Calculate_H_L_Index, get_Recursive_hl_index
 
 class TestHlIndexAndRecursive(unittest.TestCase):
 

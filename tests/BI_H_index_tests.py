@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from src.SNAT.Node_Evaluation import Calculate_BI_directional_h_index
+from src.snat.Node_Evaluation import Calculate_BI_directional_h_index
 
 
 class TestBiDirectionalHIndex(unittest.TestCase):

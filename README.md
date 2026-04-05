@@ -73,7 +73,7 @@
 ### 从pypi安装
 
 ```bash
-pip install SNAT
+pip install snat
 ```
 
 ### 从github克隆
@@ -100,7 +100,17 @@ pip install -e .
 ## 🚀 快速开始
 
 ```python
-from src.SNAT import Calculate_H_Index, Calculate_C_Index, Calculate_BI_directional_h_index
+#从github使用
+#from src.snat import Calculate_H_Index, Calculate_C_Index, Calculate_BI_directional_h_index
+#从pypi安装
+#!pip install snat
+from snat import (
+    Calculate_H_Index,
+    Calculate_C_Index,
+    Calculate_BI_directional_h_index,
+    Calculate_H_L_Index,
+    Calculate_Iterative_C_Index
+)
 import numpy as np
 
 # 计算基础 H-index
@@ -416,7 +426,7 @@ python -m unittest tests.H_Index_tests
 
 ## 🔄 版本历史
 
-- **v0.1.0** (2026-04-01)
+- **v1.1.3** (2026-04-05)
   - 实现所有核心算法
   - 完成全套单元测试
   - 支持多种输入格式

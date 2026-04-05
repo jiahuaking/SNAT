@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from src import Calculate_H_Index
+from src.snat.Node_Evaluation import Calculate_H_Index
 
 class TestCalculateHIndex(unittest.TestCase):
 

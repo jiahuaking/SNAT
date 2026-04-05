@@ -3,8 +3,8 @@ requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 
 [project]
-name = "SNAT"
-version = "0.1.1"
+name = "snat"
+version = "1.1.2"
 description = "A Python library for evaluating node importance in social networks using H-index and its derivatives"
 readme = "README.md"
 authors = [{name = "Xiangbin Yan", email = " xbyan@ustb.edu.cn"},
@@ -14,7 +14,6 @@ authors = [{name = "Xiangbin Yan", email = " xbyan@ustb.edu.cn"},
 
 license = {text = "MIT"}
 classifiers = [
-    "Development Status :: Stable release",
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
     "Topic :: Scientific/Engineering :: Information Analysis",

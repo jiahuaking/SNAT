@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
 import pandas as pd
-from src import Calculate_C_Index,Calculate_Iterative_C_Index,Calculate_CG_Index,Calculate_Communication_Centrality
+from src.snat.Node_Evaluation import Calculate_C_Index,Calculate_Iterative_C_Index,Calculate_CG_Index,Calculate_Communication_Centrality
 # 测试用例类
 # ==========================================
 class TestCalculateCIndex(unittest.TestCase):

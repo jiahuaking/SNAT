@@ -11,7 +11,7 @@ import os
 # 添加src目录到路径，使得可以导入本地模块
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-from src.SNAT.Node_Evaluation import (
+from src.snat.Node_Evaluation import (
     Calculate_H_Index, 
     Calculate_C_Index, 
     Calculate_BI_directional_h_index,
