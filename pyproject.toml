@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "snat"
-version = "1.1.2"
+version = "1.1.3"
 description = "A Python library for evaluating node importance in social networks using H-index and its derivatives"
 readme = "README.md"
 authors = [{name = "Xiangbin Yan", email = " xbyan@ustb.edu.cn"},

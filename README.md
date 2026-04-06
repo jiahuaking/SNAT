@@ -24,8 +24,7 @@
 ## 📝 背景
 
 在社交网络分析及复杂网络研究中，准确评估单一节点的重要性至关重要。传统的中心性指标如度中心性、接近中心性、介数中心性等各有侧重，但往往难以同时捕捉节点的多维特征和复杂网络中的非线性关系。
-
-本项目基于闫相斌等学者在2013-2018年间发表的四篇重要论文，将这些理论成果进行工程化实现，为研究者和开发者提供了一套即插即用的Python工具库。
+本项目基于闫相斌等学者发表的系列重要论文的研究成果，将这些理论成果进行工程化实现，为研究者和开发者提供了一套即插即用的Python工具库。
 
 ### 核心理论基础
 
@@ -61,11 +60,12 @@
 
 > **核心参考文献**：
 > 本库核心算法基于以下文献实现，具体原理请参考原论文：
-> - Zhai, L., Yan, X., & Zhu, B. (2014). The H l -index: Improvement of H-index based on quality of citing papers. *Scientometrics, 98*(2), 1021–1031.
-> - Yan, X., Zhai, L., & Fan, W. (2013). C-index: A weighted network node centrality measure for collaboration competence. *Journal of Informetrics, 7*(1), 223-239.
-> - Zhai, L., Yan, X., & Zhang, G. (2013). A centrality measure for communication ability in weighted network. *Physica A: Statistical Mechanics and its Applications, 392*(23), 6107-6117.
-> - Zhai, L., Yan, X., & Zhang, G. (2018). Bi-directional h-index: A new measure of node centrality in weighted and directed networks. *Journal of Informetrics, 12*(1), 299–314.
-
+> - [1]Zhai, Li & Yan, Xiangbin. (2026). The impact of mentorship on the citation-based performance of graduate dissertation: A social capital perspective. J. Informetrics, 20, 101781.
+> - [2]Zhai, Li & Yan, Xiangbin. (2022). A directed collaboration network for exploring the order of scientific collaboration. Journal of Informetrics. 16. 101345. 10.1016/j.joi.2022.101345. 
+> - [3]Zhai, Li & Yan, Xiangbin & Zhang, Guojing. (2018). Bi-directional h-index: A new measure of node centrality in weighted and directed networks. Journal of Informetrics. 12. 299-314. 10.1016/j.joi.2018.01.004. 
+> - [4]Zhai, Li & Yan, Xiangbin & Zhu, Bin. (2014). The Hl-index: Improvement of H-index based on quality of citing papers. Scientometrics. 98. 10.1007/s11192-013-1039-z. 
+> - [5]Zhai, Li & Yan, Xiangbin & Zhang, Guojing. (2013). A centrality measure for communication ability in weighted network. Physica A Statistical Mechanics and its Applications. 392. 6107-6117. 10.1016/j.physa.2013.07.056.
+> - [6]Yan, Xiangbin & Zhai, Li & Fan, Weiguo. (2013). C-index: A weighted network node centrality measure for collaboration competence. Journal of Informetrics. 7. 223-239. 10.1016/j.joi.2012.11.004.
 ---
 
 ## 🔧 安装
@@ -358,76 +358,71 @@ python -m unittest tests.H_Index_tests
 ### 核心算法参考文献
 
 ```bibtex
-@article{zhai2014hl,
-  title={The H l -index: improvement of H-index based on quality of citing papers},
-  author={Zhai, Linlu and Yan, Xiangbin and Zhu, Bo},
-  journal={Scientometrics},
-  volume={98},
-  number={2},
-  pages={1021--1031},
-  year={2014},
-  publisher={Springer},
-  doi={10.1007/s11192-013-1174-9},
-  url={https://doi.org/10.1007/s11192-013-1174-9}
+@article{Zhai2026TheIO,
+  title={The impact of mentorship on the citation-based performance of graduate dissertation: A social capital perspective},
+  author={Li Zhai and Xiangbin Yan},
+  journal={J. Informetrics},
+  year={2026},
+  volume={20},
+  pages={101781},
+  url={https://api.semanticscholar.org/CorpusID:285997522}
 }
 
-@article{yan2013cindex,
-  title={C-index: A weighted network node centrality measure for collaboration competence},
-  author={Yan, Xiangbin and Zhai, Linlu and Fan, Weiguo},
-  journal={Journal of Informetrics},
-  volume={7},
-  number={1},
-  pages={223--239},
-  year={2013},
-  publisher={Elsevier},
-  doi={10.1016/j.joi.2012.10.001},
-  url={https://doi.org/10.1016/j.joi.2012.10.001}
+@article{article,
+author = {Zhai, Li and Yan, Xiangbin},
+year = {2022},
+month = {11},
+pages = {101345},
+title = {A directed collaboration network for exploring the order of scientific collaboration},
+volume = {16},
+journal = {Journal of Informetrics},
+doi = {10.1016/j.joi.2022.101345}
 }
 
-@article{zhai2013centrality,
-  title={A centrality measure for communication ability in weighted network},
-  author={Zhai, Linlu and Yan, Xiangbin and Zhang, Guanrong},
-  journal={Physica A: Statistical Mechanics and its Applications},
-  volume={392},
-  number={23},
-  pages={6107--6117},
-  year={2013},
-  publisher={Elsevier},
-  doi={10.1016/j.physa.2013.07.028},
-  url={https://doi.org/10.1016/j.physa.2013.07.028}
+@article{article,
+author = {Zhai, Li and Yan, Xiangbin and Zhang, Guojing},
+year = {2018},
+month = {02},
+pages = {299-314},
+title = {Bi-directional h-index: A new measure of node centrality in weighted and directed networks},
+volume = {12},
+journal = {Journal of Informetrics},
+doi = {10.1016/j.joi.2018.01.004}
 }
 
-@article{zhai2018bidirectional,
-  title={Bi-directional h-index: A new measure of node centrality in weighted and directed networks},
-  author={Zhai, Linlu and Yan, Xiangbin and Zhang, Guanrong},
-  journal={Journal of Informetrics},
-  volume={12},
-  number={1},
-  pages={299--314},
-  year={2018},
-  publisher={Elsevier},
-  doi={10.1016/j.joi.2017.12.002},
-  url={https://doi.org/10.1016/j.joi.2017.12.002}
+@article{article,
+author = {Zhai, Li and Yan, Xiangbin and Zhu, Bin},
+year = {2014},
+month = {02},
+pages = {},
+title = {The Hl-index: Improvement of H-index based on quality of citing papers},
+volume = {98},
+journal = {Scientometrics},
+doi = {10.1007/s11192-013-1039-z}
+}
+
+@article{article,
+author = {Zhai, Li and Yan, Xiangbin and Zhang, Guojing},
+year = {2013},
+month = {12},
+pages = {6107-6117},
+title = {A centrality measure for communication ability in weighted network},
+volume = {392},
+journal = {Physica A Statistical Mechanics and its Applications},
+doi = {10.1016/j.physa.2013.07.056}
+}
+
+@article{article,
+author = {Yan, Xiangbin and Zhai, Li and Fan, Weiguo},
+year = {2013},
+month = {01},
+pages = {223-239},
+title = {C-index: A weighted network node centrality measure for collaboration competence},
+volume = {7},
+journal = {Journal of Informetrics},
+doi = {10.1016/j.joi.2012.11.004}
 }
 ```
-
-### 引用说明
-
-本库实现了上述四篇论文中提出的核心算法：
-
-1. **Hl-index算法** - 基于Zhai等人(2014)的改进H-index，考虑引用论文质量
-2. **C-index算法** - 基于Yan等人(2013)的加权网络节点中心性度量
-3. **交流中心性算法** - 基于Zhai等人(2013)的加权网络交流能力中心性度量
-4. **双向H-index算法** - 基于Zhai等人(2018)的有向加权网络节点中心性度量
-
 请在您的研究中适当引用这些原始论文，以支持学术工作的可追溯性和完整性。
 
 ---
-
-## 🔄 版本历史
-
-- **v1.1.3** (2026-04-05)
-  - 实现所有核心算法
-  - 完成全套单元测试
-  - 支持多种输入格式
-  - 优化性能与异常处理

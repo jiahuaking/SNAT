@@ -11,12 +11,14 @@
 受学术界 **H-index (h指数)** 及相关研究启发，本项目旨在构建一套即插即用的 Python 工具库，将理论指标延伸至工程实现，填补现有库在多层级递归评价指标上的空白。
 
 ### 1.2 参考文献
-本阶段核心算法实现依据以下文献：
+> **本项目核心算法实现依据以下文献：**
+> - [1]Zhai, Li & Yan, Xiangbin. (2026). The impact of mentorship on the citation-based performance of graduate dissertation: A social capital perspective. J. Informetrics, 20, 101781.
+> - [2]Zhai, Li & Yan, Xiangbin. (2022). A directed collaboration network for exploring the order of scientific collaboration. Journal of Informetrics. 16. 101345. 10.1016/j.joi.2022.101345. 
+> - [3]Zhai, Li & Yan, Xiangbin & Zhang, Guojing. (2018). Bi-directional h-index: A new measure of node centrality in weighted and directed networks. Journal of Informetrics. 12. 299-314. 10.1016/j.joi.2018.01.004. 
+> - [4]Zhai, Li & Yan, Xiangbin & Zhu, Bin. (2014). The Hl-index: Improvement of H-index based on quality of citing papers. Scientometrics. 98. 10.1007/s11192-013-1039-z. 
+> - [5]Zhai, Li & Yan, Xiangbin & Zhang, Guojing. (2013). A centrality measure for communication ability in weighted network. Physica A Statistical Mechanics and its Applications. 392. 6107-6117. 10.1016/j.physa.2013.07.056.
+> - [6]Yan, Xiangbin & Zhai, Li & Fan, Weiguo. (2013). C-index: A weighted network node centrality measure for collaboration competence. Journal of Informetrics. 7. 223-239. 10.1016/j.joi.2012.11.004.
 
-- [1] Zhai, L., Yan, X. & Zhu, B. The H l -index: improvement of H-index based on quality of citing papers. Scientometrics 98, 1021–1031 (2014). https://doi.org/10.1007/s11192-013-1039-z
-- [2] Yan, X., Zhai, L., & Fan, W. (2013). C-index: A Weighted Network Node Centrality Measure for Collaboration Competence. Journal of Informetrics, 7, 223-239. https://doi.org/10.1016/j.joi.2012.11.004
-- [3] Li Zhai, Xiangbin Yan, Guojing Zhang, A centrality measure for communication ability in weighted network, Physica A: Statistical Mechanics and its Applications, Volume 392, Issue 23, 2013, Pages 6107-6117, ISSN 0378-4371,https://doi.org/10.1016/j.physa.2013.07.056.
-- [4] Zhai, L., Yan, X., & Zhang, G. (2018). Bi-directional h-index: A new measure of node centrality in weighted and directed networks. J. Informetrics, 35 1, 0.
 ### 1.3 目标与进度管理
 
 | 模块       | 规划目标                                      | 目前进度                             |   状态   |
@@ -42,7 +44,7 @@
     - 替换Union[List[List[Union[int, float]]], np.ndarray]为Union[List[List[Number], np.ndarray]
 - **20260401：** 【bug修复】修复了H_L_index函数中边界条件和容灾条件快速返回时输出格式与正常格式不一致导致无法识别的问题
 - **20260401：** 实现双向H-index指标的函数开发，更改依赖为已实现的Calculate_H_Index
-
+- **20260406：** 完成readme文档撰写，完成github和pypi开源
     
 
 ----------
